@@ -1,7 +1,7 @@
 ,,Unbounded loops,,,DoS with failed call,,
 ,,,,,,,
-,contract,Annotated #,function,loc,Annotated #,function,loc
-1,8f9242b27ce6b60e50d5b2fb911cac3e,4,validateMAmount,661,0,,
+,contract,Annotated #,In function(s),loc,Annotated #,In function(s),loc
+1,8f9242b27ce6b60e50d5b2fb911cac3e,4,validateMAmount,661,,,
 ,,,validateMAmount,671,,,
 ,,,validateSAmount,688,,,
 ,,,validateSAmount,698,,,
@@ -19,33 +19,39 @@
 ,,,buyTicket,109,,,
 ,,,withdrawForWinner,180,,,
 8,f6055987517b95a487de04f902089089,1,nextRound,462,,,
-9,377ee8b41a37e31a864649cfe244bf22,9,winnerIsA,67,,,67
-,,,winnerIsB,87,,,87
-,,,winnerIsDraw,107,,,107
-10,841d45b777e7873d0686d89f919d075b,1,claimPrize,257,1,,
-,,,,,,claimPrize ,257
+9,377ee8b41a37e31a864649cfe244bf22,9,winnerIsA,67,,,
+,,,winnerIsB,87,,,
+,,,winnerIsDraw,107,,,
+,,,status,130,,,
+,,,status,136,,,
+,,,status,141,,,
+,,,betA,162,,,
+,,,betB,182,,,
+,,,betD,202,,,
+10,841d45b777e7873d0686d89f919d075b,1,claimPrize,257,1,claimPrize ,257
+,,,,,,,
 11,609d077665ebe3559d7c59099987b44f,3,dripETH,47,3,dripETH,47
 ,,,dropETH,54,,dropETH,54
 ,,,customDropETH,61,,customDropETH,61
-12,f82a6eb89a743af42651734926d00216,0,,,,,
+12,f82a6eb89a743af42651734926d00216,,,,,,
 13,2d361d80240b4a3a39d882935f342108,,,,,,
 14,970ddad178a75af879d4a9d9b27a789d,1,allWalletBalances,234,1,allWalletBalances,234
 15,744e4edbc6996ad7079115bded1f3fe0,1,buyTickets,48,,,
-16,f0848d72cdcfe42fffad227f02759eb9,0,getPaginatedInstances,947,,,
+16,f0848d72cdcfe42fffad227f02759eb9,,,,,,
 ,,,,,,,
-17,6c42b4d6f76005032f759d10a2364549,0,,,,,
-18,12aba1520aa526d23f40e17c659a9207,0,,,1,distributeAirdrop,90
+17,6c42b4d6f76005032f759d10a2364549,,,,,,
+18,12aba1520aa526d23f40e17c659a9207,,,,1,distributeAirdrop,90
 19,7cc7c83f1d3243eea157258f94df703f,1,enter,56,1,enter,56
 20,1ec9c1ed255bc63b972263238cb93c40,1,placeBets,79,1,placeBets,79
 21,4ea318278e2288cbd37438cea15717a7,2,killBoardProposal,345,,,539
 ,,,voteBoardProposal,355,,,544
-22,49306dda58bec1b94d8aac36b7c88ed7,0,,,,,
+22,49306dda58bec1b94d8aac36b7c88ed7,,,,,,
 23,346d645ed662f5020259795dcada89cc,1,purchase,57,1,purchase,57
-24,af26fe45db4ca433269e3c0d56421e62,0,,206,,,
-25,0b84bb46a9798aecf40f42a7e99036e3,0,,,,,
+24,af26fe45db4ca433269e3c0d56421e62,,,,,,
+25,0b84bb46a9798aecf40f42a7e99036e3,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
 26,1ab144217b35ef4159ff65ab6135e6e1,1,findWinner,1116,,,
-27,821301bea32b0ddd833f9819aa7b8428,0,,,,,
-28,fb74b26cb76d613a95bf0d7ef283a632,0,,,,,
+27,821301bea32b0ddd833f9819aa7b8428,,,,,,
+28,fb74b26cb76d613a95bf0d7ef283a632,,,,,,
