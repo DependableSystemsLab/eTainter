@@ -9,6 +9,7 @@ import os
 import shlex
 import re
 import time
+import platform
 from src.project import Project
 from src.cfg import opcodes
 from src.slicing import interesting_slices, slice_to_program
@@ -242,16 +243,17 @@ def main():
     
     savefilebase = args.savefile or args.file
 
-    # limit default memory to 6GB
-    if args.memory:
-        mem_limit = int(args.memory) * 1024 * 1024 * 1024
-    else:
-        mem_limit = 6 * 1024 * 1024 * 1024
-    try:
-        rsrc = resource.RLIMIT_VMEM
-    except:
-        rsrc = resource.RLIMIT_AS
-    resource.setrlimit(rsrc, (mem_limit, mem_limit))  
+    # limit default memory to 6GB on Linux
+    if platform.system() == 'Linux':
+        if args.memory:
+            mem_limit = int(args.memory) * 1024 * 1024 * 1024
+        else:
+            mem_limit = 6 * 1024 * 1024 * 1024
+        try:
+            rsrc = resource.RLIMIT_VMEM
+        except:
+            rsrc = resource.RLIMIT_AS
+        resource.setrlimit(rsrc, (mem_limit, mem_limit))  
 
     initial_storage = dict()
     if args.initial_storage_file:
